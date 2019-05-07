@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>demo</title>
+    <style>
+        div,img {
+            width: 30px;
+            height: 100px;
+        }
+        div{
+            padding: 200px;
+        }
+        img {
+            transform-origin: 15px 100px;
+            transition: transform 200ms linear
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id='myDiv' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1550138503367&di=13a6c48c3de5e7cebb72372ecc4f46ad&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F46%2F98%2F58159bb660f22_610.jpg" alt="">
+    </div>
+    <script>
+        (function test(params) {
+            var div = document.getElementById('myDiv')
+            var ang = 0
+            setInterval(() => {
+                // var ang = Math.floor(Math.random() * 270);
+                ang += 10;
+                div.style.transform = `rotateZ(${ang}deg)`
+                console.log(div.style.transform, 'style')
+            }, 200);
+        })()
+    </script>
+</body>
+
+</html>
