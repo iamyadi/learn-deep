@@ -1,0 +1,14 @@
+{
+  "name": "minrouter",
+  "version": "1.0.0",
+  "description": "a demo",
+  "main": "./popState_route.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --config webpack.config.js"
+  }
+}

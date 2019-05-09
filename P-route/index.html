@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>route</title>
+  <style>
+    a {
+      width: 150px;
+      display: inline-block;
+      height: 80px;
+      background: palegoldenrod;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex;justify-content: space-around;">
+    <div>
+      <!-- <h2>此demo，实现简易hash route</h2> -->
+      <p>点击切换导航：</p>
+      <a href="#PageA">pageA</a>
+      <a href="#PageB">pageB</a>
+      <a href="#PageC">pageC</a>
+      <div id="root"></div>
+    </div>
+    <div id='pop'>
+      <!-- <h2>此demo，实现简易pushState route</h2> -->
+      <p>点击切换导航：</p>
+      <a link="/PageA">pageA'</a>
+      <a link="/PageB">pageB</a>
+      <a link="/PageC">pageC</a>
+      <div id="root2"></div>
+    </div>
+  </div>
+  <script>
+   
+  </script>
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="./hash_route_index.js"></script>
+  <script src="./popState_route.js"></script>
+</body>
+
+</html>
