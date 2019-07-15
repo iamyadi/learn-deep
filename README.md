@@ -9,3 +9,5 @@
 I-Animation | 一些动画 | 完成
 I-particl | 粒子系统 | 未完成
 P-ES6 | es6部分知识点原理 | 完成
+P-Redux | Redux原理 | 完成
+P-Route | react hash路由原理 | 完成
